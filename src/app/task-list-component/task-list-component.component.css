@@ -1,0 +1,15 @@
+.completed{
+    text-decoration: line-through;
+}
+
+.form{
+    max-width: 100%;
+}
+
+button{
+    width: 100%;
+    background-color: coral;
+    border: none;
+    padding: 1px;
+    font-size: large;
+}

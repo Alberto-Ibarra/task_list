@@ -1,0 +1,15 @@
+<div class="main">
+    <form class="form">
+        <input type="text" placeholder="enter task..." [(ngModel)]="newTask" name="taskInput" class="input"/><br />
+        <button (click)="addTask()">Enter Task</button>
+    </form>
+    
+    <h3>Total task: {{taskList.length}}</h3>
+    
+    <ul>
+        <!-- [class.completed]  is class binding  **completed** when value is pressed-->
+        <li *ngFor="let task of taskList; let i = index" [class.completed]="checkedTask[i]" (click)="checked(i)" id="taskItem-{{i}}">
+            {{task}}
+        </li>
+    </ul>
+</div>
